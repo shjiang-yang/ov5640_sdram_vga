@@ -1,0 +1,1193 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: ov5640_sdram_vga_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ov5640_sdram_vga_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ov5640_sdram_vga_top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : ov5640_sdram_vga_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\pll.v" into library work
+Parsing module <pll>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\pll1.v" into library work
+Parsing module <pll1>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_write.v" into library work
+Parsing verilog file "./SDRAM_config.v" included at line 9.
+Parsing module <SDRAM_write>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_refresh.v" into library work
+Parsing module <SDRAM_refresh>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_read.v" into library work
+Parsing verilog file "./SDRAM_config.v" included at line 9.
+Parsing module <SDRAM_read>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_init.v" into library work
+Parsing module <SDRAM_init>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_sccb.v" into library work
+Parsing module <ov5640_sccb>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_arbit.v" into library work
+Parsing verilog file "./SDRAM_config.v" included at line 8.
+Parsing module <SDRAM_arbit>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_powerup.v" into library work
+Parsing module <ov5640_powerup>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_data.v" into library work
+Parsing module <ov5640_data>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_cfg.v" into library work
+Parsing module <ov5640_cfg>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\fifo.v" into library work
+Parsing module <fifo>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\vga_driver.v" into library work
+WARNING:HDLCompiler:1509 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\vga_driver.v" Line 13: Macro name 1024_768_60Hz starting with a number violates Verilog syntax
+Parsing module <vga_driver>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" into library work
+Parsing module <SDRAM_TOP>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_top.v" into library work
+Parsing module <ov5640_top>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_sdram_vga_top.v" into library work
+Parsing module <ov5640_sdram_vga_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ov5640_sdram_vga_top>.
+
+Elaborating module <pll>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=25,CLKFX_MULTIPLY=12,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\pll.v" Line 135: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <pll1>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=10,CLKFX_MULTIPLY=13,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\pll1.v" Line 130: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <debounce(CLK_CYC=20)>.
+WARNING:HDLCompiler:1127 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_sdram_vga_top.v" Line 94: Assignment to rst_key_out ignored, since the identifier is never used
+WARNING:HDLCompiler:1016 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_top.v" Line 69: Port rd_data is not connected to this instance
+
+Elaborating module <ov5640_top>.
+
+Elaborating module <ov5640_powerup>.
+
+Elaborating module <ov5640_cfg>.
+
+Elaborating module <ov5640_sccb>.
+
+Elaborating module <ov5640_data>.
+WARNING:HDLCompiler:1016 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" Line 118: Port rd_data_count is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" Line 137: Port wr_data_count is not connected to this instance
+
+Elaborating module <SDRAM_TOP>.
+
+Elaborating module <SDRAM_arbit>.
+
+Elaborating module <SDRAM_init>.
+
+Elaborating module <SDRAM_refresh>.
+
+Elaborating module <SDRAM_write>.
+WARNING:HDLCompiler:413 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_write.v" Line 275: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_write.v" Line 275: Assignment to write_bank_addr ignored, since the identifier is never used
+
+Elaborating module <SDRAM_read>.
+
+Elaborating module <fifo>.
+WARNING:HDLCompiler:1499 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\fifo.v" Line 39: Empty module <fifo> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" Line 125: Assignment to full_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" Line 130: Assignment to empty_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" Line 144: Assignment to full_r ignored, since the identifier is never used
+
+Elaborating module <vga_driver>.
+WARNING:Xst:2972 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_sdram_vga_top.v" line 88. All outputs of instance <debounce_inst> of block <debounce> are unconnected in block <ov5640_sdram_vga_top>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ov5640_sdram_vga_top>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_sdram_vga_top.v".
+INFO:Xst:3210 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_sdram_vga_top.v" line 88: Output port <key_out> of the instance <debounce_inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ov5640_sdram_vga_top> synthesized.
+
+Synthesizing Unit <pll>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\pll.v".
+    Summary:
+	no macro.
+Unit <pll> synthesized.
+
+Synthesizing Unit <pll1>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ipcore_dir\pll1.v".
+    Summary:
+	no macro.
+Unit <pll1> synthesized.
+
+Synthesizing Unit <ov5640_top>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_top.v".
+INFO:Xst:3210 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_top.v" line 69: Output port <rd_data> of the instance <ov5640_cfg_inst> is unconnected or connected to loadless signal.
+    Found 9-bit register for signal <cnt>.
+    Found 9-bit adder for signal <cnt[8]_GND_9_o_add_1_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+Unit <ov5640_top> synthesized.
+
+Synthesizing Unit <ov5640_powerup>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_powerup.v".
+    Found 21-bit register for signal <delay_cnt>.
+    Found 21-bit adder for signal <delay_cnt[20]_GND_10_o_add_2_OUT> created at line 39.
+    Found 21-bit comparator greater for signal <cmos_pwdn> created at line 43
+    Found 21-bit comparator lessequal for signal <delay_cnt[20]_GND_10_o_LessThan_7_o> created at line 44
+    Found 21-bit comparator lessequal for signal <delay_cnt[20]_PWR_10_o_LessThan_8_o> created at line 45
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <ov5640_powerup> synthesized.
+
+Synthesizing Unit <ov5640_cfg>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_cfg.v".
+    Found 9-bit register for signal <cfg_reg_addr>.
+    Found 1-bit register for signal <start>.
+    Found 1-bit register for signal <cfg_done>.
+    Found 1-bit register for signal <busy_r>.
+    Found 9-bit adder for signal <cfg_reg_addr[8]_GND_11_o_add_7_OUT> created at line 62.
+    Found 512x32-bit Read Only RAM for signal <cfg_reg_addr[8]_X_11_o_wide_mux_14_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+Unit <ov5640_cfg> synthesized.
+
+Synthesizing Unit <ov5640_sccb>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_sccb.v".
+    Found 1-bit register for signal <cmos_sdat_r>.
+    Found 1-bit register for signal <cmos_sclk>.
+    Found 7-bit register for signal <cnt>.
+    Found 8-bit register for signal <rd_data>.
+    Found 32-bit register for signal <cfg_data_r>.
+    Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <sdat_dir>.
+    Found 7-bit adder for signal <cnt[6]_GND_12_o_add_17_OUT> created at line 84.
+    Found 1-bit 53-to-1 multiplexer for signal <cnt[6]_PWR_12_o_Mux_28_o> created at line 109.
+    Found 1-bit tristate buffer for signal <cmos_sdat> created at line 182
+    Found 7-bit comparator lessequal for signal <n0020> created at line 95
+    Found 7-bit comparator lessequal for signal <n0022> created at line 95
+    Found 7-bit comparator lessequal for signal <n0025> created at line 97
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  52 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <ov5640_sccb> synthesized.
+
+Synthesizing Unit <ov5640_data>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\ov5640_data.v".
+    Found 16-bit register for signal <rgb565>.
+    Found 4-bit register for signal <dummy_frames>.
+    Found 1-bit register for signal <rgb565_high>.
+    Found 1-bit register for signal <cmos_vsync_r>.
+    Found 4-bit adder for signal <dummy_frames[3]_GND_15_o_add_11_OUT> created at line 82.
+    Found 4-bit comparator lessequal for signal <n0019> created at line 87
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <ov5640_data> synthesized.
+
+Synthesizing Unit <SDRAM_TOP>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v".
+INFO:Xst:3210 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" line 118: Output port <rd_data_count> of the instance <write_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" line 118: Output port <full> of the instance <write_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" line 118: Output port <empty> of the instance <write_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" line 137: Output port <wr_data_count> of the instance <read_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_TOP.v" line 137: Output port <full> of the instance <read_fifo> is unconnected or connected to loadless signal.
+    Found 10-bit comparator greater for signal <write_trig> created at line 77
+    Found 10-bit comparator greater for signal <r_data_count[9]_PWR_14_o_LessThan_2_o> created at line 78
+    Summary:
+	inferred   2 Comparator(s).
+Unit <SDRAM_TOP> synthesized.
+
+Synthesizing Unit <SDRAM_arbit>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_arbit.v".
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <we_n>.
+    Found 1-bit register for signal <cas_n>.
+    Found 1-bit register for signal <ras_n>.
+    Found 1-bit register for signal <cs_n>.
+    Found 13-bit register for signal <addr>.
+    Found 2-bit register for signal <ba>.
+    Found 1-bit register for signal <write_read_flag>.
+    Found 1-bit register for signal <arbit_refresh_ack>.
+    Found 1-bit register for signal <arbit_write_ack>.
+    Found 1-bit register for signal <arbit_read_ack>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 13                                             |
+    | Outputs            | 5                                              |
+    | Clock              | sysclk_100M (rising_edge)                      |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit tristate buffer for signal <dq<15>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<14>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<13>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<12>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<11>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<10>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<9>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<8>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<7>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<6>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<5>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<4>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<3>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<2>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<1>> created at line 88
+    Found 1-bit tristate buffer for signal <dq<0>> created at line 88
+    Summary:
+	inferred  23 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+	inferred  16 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <SDRAM_arbit> synthesized.
+
+Synthesizing Unit <SDRAM_init>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_init.v".
+    Found 4-bit register for signal <cmd_cnt>.
+    Found 15-bit register for signal <powerup_cnt>.
+    Found 4-bit register for signal <cmd_reg>.
+    Found 13-bit register for signal <sdram_addr>.
+    Found 15-bit adder for signal <powerup_cnt[14]_GND_34_o_add_2_OUT> created at line 50.
+    Found 4-bit adder for signal <cmd_cnt[3]_GND_34_o_add_9_OUT> created at line 63.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <SDRAM_init> synthesized.
+
+Synthesizing Unit <SDRAM_refresh>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_refresh.v".
+    Found 4-bit register for signal <cnt_cmd>.
+    Found 13-bit register for signal <cnt_refresh>.
+    Found 13-bit adder for signal <cnt_refresh[12]_GND_36_o_add_3_OUT> created at line 49.
+    Found 4-bit adder for signal <cnt_cmd[3]_GND_36_o_add_11_OUT> created at line 65.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <SDRAM_refresh> synthesized.
+
+Synthesizing Unit <SDRAM_write>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_write.v".
+    Found 20-bit register for signal <write_cnt>.
+    Found 3-bit register for signal <burst_cnt>.
+    Found 6-bit register for signal <col_addr_p>.
+    Found 13-bit register for signal <row_addr>.
+    Found 2-bit register for signal <sdram_bank_addr>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <arbit_write_req>.
+    Found 1-bit register for signal <write_end>.
+    Found 1-bit register for signal <act_cnt>.
+    Found 1-bit register for signal <prech_cnt>.
+    Found 1-bit register for signal <arbit_prech_end>.
+    Found 1-bit register for signal <data_vld>.
+    Found 4-bit register for signal <cmd_reg>.
+    Found 13-bit register for signal <sdram_addr>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 5                                              |
+    | Clock              | sysclk_100M (rising_edge)                      |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit adder for signal <write_cnt[19]_GND_37_o_add_35_OUT> created at line 124.
+    Found 3-bit adder for signal <burst_cnt[2]_GND_37_o_add_55_OUT> created at line 184.
+    Found 6-bit adder for signal <col_addr_p[5]_GND_37_o_add_79_OUT> created at line 241.
+    Found 13-bit adder for signal <row_addr[12]_GND_37_o_add_88_OUT> created at line 253.
+    Found 2-bit adder for signal <sdram_bank_addr[1]_PWR_18_o_add_95_OUT> created at line 264.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  67 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SDRAM_write> synthesized.
+
+Synthesizing Unit <SDRAM_read>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\SDRAM_read.v".
+    Found 1-bit register for signal <arbit_read_end>.
+    Found 9-bit register for signal <col_addr>.
+    Found 2-bit register for signal <sdram_bank_addr>.
+    Found 13-bit register for signal <row_addr>.
+    Found 4-bit register for signal <read_cnt>.
+    Found 20-bit register for signal <burst_cnt>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <row_end>.
+    Found 1-bit register for signal <act_cnt>.
+    Found 1-bit register for signal <prech_cnt>.
+    Found 1-bit register for signal <arbit_prech_end>.
+    Found 4-bit register for signal <cmd_reg>.
+    Found 1-bit register for signal <arbit_read_req>.
+    Found 13-bit register for signal <sdram_addr>.
+    Found 1-bit register for signal <data_vld>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 5                                              |
+    | Clock              | sysclk_100M (rising_edge)                      |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <col_addr[8]_GND_39_o_add_54_OUT> created at line 163.
+    Found 2-bit adder for signal <write_bank_addr[1]_PWR_19_o_add_62_OUT> created at line 172.
+    Found 13-bit adder for signal <row_addr[12]_GND_39_o_add_72_OUT> created at line 188.
+    Found 1-bit adder for signal <act_cnt_PWR_19_o_add_83_OUT<0>> created at line 208.
+    Found 4-bit adder for signal <read_cnt[3]_GND_39_o_add_88_OUT> created at line 220.
+    Found 1-bit adder for signal <prech_cnt_PWR_19_o_add_96_OUT<0>> created at line 232.
+    Found 20-bit adder for signal <burst_cnt[19]_GND_39_o_add_107_OUT> created at line 262.
+    Found 4-bit comparator lessequal for signal <n0084> created at line 249
+    Found 4-bit comparator lessequal for signal <n0086> created at line 249
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  72 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SDRAM_read> synthesized.
+
+Synthesizing Unit <vga_driver>.
+    Related source file is "C:\Users\shjiang\Desktop\Xilinx Projects\OV5640_SDRAM_VGA\vga_driver.v".
+    Found 1-bit register for signal <v_sync>.
+    Found 1-bit register for signal <h_sync>.
+    Found 10-bit register for signal <v_cnt>.
+    Found 11-bit register for signal <h_cnt>.
+    Found 1-bit register for signal <data_req>.
+    Found 1-bit register for signal <data_req_r>.
+    Found 11-bit adder for signal <h_cnt[10]_GND_43_o_add_2_OUT> created at line 94.
+    Found 10-bit adder for signal <v_cnt[9]_GND_43_o_add_9_OUT> created at line 105.
+    Found 11-bit comparator greater for signal <h_cnt[10]_INV_77_o> created at line 113
+    Found 10-bit comparator greater for signal <v_cnt[9]_INV_79_o> created at line 124
+    Found 11-bit comparator lessequal for signal <n0018> created at line 135
+    Found 11-bit comparator lessequal for signal <n0020> created at line 136
+    Found 10-bit comparator lessequal for signal <n0023> created at line 137
+    Found 10-bit comparator lessequal for signal <n0026> created at line 138
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <vga_driver> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 512x32-bit single-port Read Only RAM                  : 1
+# Adders/Subtractors                                   : 23
+ 1-bit adder                                           : 2
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 13-bit adder                                          : 3
+ 15-bit adder                                          : 1
+ 2-bit adder                                           : 2
+ 20-bit adder                                          : 2
+ 21-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 4
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 9-bit adder                                           : 3
+# Registers                                            : 67
+ 1-bit register                                        : 35
+ 10-bit register                                       : 1
+ 11-bit register                                       : 1
+ 13-bit register                                       : 7
+ 15-bit register                                       : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 3
+ 20-bit register                                       : 2
+ 21-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 7
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 3
+# Comparators                                          : 17
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 2
+ 21-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 2
+ 4-bit comparator lessequal                            : 3
+ 7-bit comparator lessequal                            : 3
+# Multiplexers                                         : 35
+ 1-bit 2-to-1 multiplexer                              : 11
+ 1-bit 53-to-1 multiplexer                             : 1
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 2
+ 7-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 17
+ 1-bit tristate buffer                                 : 17
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/fifo.ngc>.
+Loading core <fifo> for timing and area information for instance <write_fifo>.
+Loading core <fifo> for timing and area information for instance <read_fifo>.
+INFO:Xst:2261 - The FF/Latch <sdram_addr_2> in Unit <SDRAM_init_inst> is equivalent to the following 7 FFs/Latches, which will be removed : <sdram_addr_3> <sdram_addr_6> <sdram_addr_7> <sdram_addr_8> <sdram_addr_9> <sdram_addr_11> <sdram_addr_12> 
+INFO:Xst:2261 - The FF/Latch <sdram_addr_0> in Unit <SDRAM_init_inst> is equivalent to the following 3 FFs/Latches, which will be removed : <sdram_addr_1> <sdram_addr_4> <sdram_addr_5> 
+WARNING:Xst:1710 - FF/Latch <cmd_reg_3> (without init value) has a constant value of 0 in block <SDRAM_init_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_addr_2> (without init value) has a constant value of 0 in block <SDRAM_init_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cmd_reg_3> (without init value) has a constant value of 0 in block <SDRAM_write_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cmd_reg_3> (without init value) has a constant value of 0 in block <SDRAM_read_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cs_n> (without init value) has a constant value of 0 in block <SDRAM_arbit_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <cmd_reg<3:3>> (without init value) have a constant value of 0 in block <SDRAM_write>.
+WARNING:Xst:2404 -  FFs/Latches <cmd_reg<3:3>> (without init value) have a constant value of 0 in block <SDRAM_read>.
+
+Synthesizing (advanced) Unit <SDRAM_init>.
+The following registers are absorbed into counter <powerup_cnt>: 1 register on signal <powerup_cnt>.
+Unit <SDRAM_init> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SDRAM_read>.
+The following registers are absorbed into counter <row_addr>: 1 register on signal <row_addr>.
+The following registers are absorbed into counter <burst_cnt>: 1 register on signal <burst_cnt>.
+The following registers are absorbed into counter <act_cnt>: 1 register on signal <act_cnt>.
+The following registers are absorbed into counter <prech_cnt>: 1 register on signal <prech_cnt>.
+Unit <SDRAM_read> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SDRAM_refresh>.
+The following registers are absorbed into counter <cnt_refresh>: 1 register on signal <cnt_refresh>.
+The following registers are absorbed into counter <cnt_cmd>: 1 register on signal <cnt_cmd>.
+Unit <SDRAM_refresh> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SDRAM_write>.
+The following registers are absorbed into counter <col_addr_p>: 1 register on signal <col_addr_p>.
+The following registers are absorbed into counter <write_cnt>: 1 register on signal <write_cnt>.
+The following registers are absorbed into counter <row_addr>: 1 register on signal <row_addr>.
+The following registers are absorbed into accumulator <sdram_bank_addr>: 1 register on signal <sdram_bank_addr>.
+Unit <SDRAM_write> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ov5640_cfg>.
+The following registers are absorbed into counter <cfg_reg_addr>: 1 register on signal <cfg_reg_addr>.
+INFO:Xst:3217 - HDL ADVISOR - Register <cfg_data_r> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_cfg_reg_addr[8]_X_11_o_wide_mux_14_OUT> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 32-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cfg_reg_addr>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_cfg_reg_addr[8]_X_11_o_wide_mux_14_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <ov5640_cfg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ov5640_data>.
+The following registers are absorbed into counter <dummy_frames>: 1 register on signal <dummy_frames>.
+Unit <ov5640_data> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ov5640_powerup>.
+The following registers are absorbed into counter <delay_cnt>: 1 register on signal <delay_cnt>.
+Unit <ov5640_powerup> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ov5640_top>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <ov5640_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_driver>.
+The following registers are absorbed into counter <h_cnt>: 1 register on signal <h_cnt>.
+The following registers are absorbed into counter <v_cnt>: 1 register on signal <v_cnt>.
+Unit <vga_driver> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 512x32-bit single-port distributed Read Only RAM      : 1
+# Adders/Subtractors                                   : 6
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 7-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 16
+ 1-bit up counter                                      : 2
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+ 13-bit up counter                                     : 3
+ 15-bit up counter                                     : 1
+ 20-bit up counter                                     : 2
+ 21-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 6-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Accumulators                                         : 1
+ 2-bit up accumulator                                  : 1
+# Registers                                            : 182
+ Flip-Flops                                            : 182
+# Comparators                                          : 17
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 2
+ 21-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 2
+ 4-bit comparator lessequal                            : 3
+ 7-bit comparator lessequal                            : 3
+# Multiplexers                                         : 23
+ 1-bit 2-to-1 multiplexer                              : 9
+ 1-bit 53-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 4
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <cmd_reg_3> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_2> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_3> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_6> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_7> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_8> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_9> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_11> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_addr_12> (without init value) has a constant value of 0 in block <SDRAM_init>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sdram_addr_0> in Unit <SDRAM_init> is equivalent to the following 3 FFs/Latches, which will be removed : <sdram_addr_1> <sdram_addr_4> <sdram_addr_5> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <SDRAM_TOP_inst/SDRAM_arbit_inst/FSM_0> on signal <state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 000
+ 00010 | 001
+ 00100 | 010
+ 01000 | 011
+ 10000 | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/FSM_1> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 000
+ 00010 | 001
+ 00100 | 011
+ 01000 | 010
+ 10000 | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/FSM_2> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 000
+ 00010 | 001
+ 00100 | 011
+ 01000 | 010
+ 10000 | 110
+-------------------
+WARNING:Xst:1710 - FF/Latch <sdram_bank_addr_0> (without init value) has a constant value of 0 in block <SDRAM_write>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_end> (without init value) has a constant value of 0 in block <SDRAM_read>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_addr_0> (without init value) has a constant value of 0 in block <SDRAM_read>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_addr_1> (without init value) has a constant value of 0 in block <SDRAM_read>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_addr_2> (without init value) has a constant value of 0 in block <SDRAM_read>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cfg_data_r_31> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cfg_data_r_26> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cfg_data_r_25> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cfg_data_r_24> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cfg_data_r_23> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cfg_data_r_14> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_7> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_6> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_5> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_4> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_3> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_2> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_1> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+WARNING:Xst:2677 - Node <ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/rd_data_0> of sequential type is unconnected in block <ov5640_sdram_vga_top>.
+
+Optimizing unit <ov5640_sdram_vga_top> ...
+
+Optimizing unit <ov5640_data> ...
+
+Optimizing unit <SDRAM_init> ...
+
+Optimizing unit <SDRAM_refresh> ...
+
+Optimizing unit <SDRAM_write> ...
+
+Optimizing unit <SDRAM_read> ...
+
+Optimizing unit <vga_driver> ...
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/ba_0> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/cs_n> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/sdram_bank_addr_0> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_6> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_5> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_19> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_18> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_17> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_16> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_15> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_14> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_13> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_12> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_11> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_10> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_9> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_8> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_7> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_6> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt_5> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_refresh_inst/cnt_refresh_12> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_refresh_inst/cnt_refresh_11> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_refresh_inst/cnt_refresh_10> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_refresh_inst/cnt_cmd_3> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_19> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_18> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_17> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_16> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_15> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_14> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_13> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_12> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_11> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_10> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_9> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_8> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_7> (without init value) has a constant value of 0 in block <ov5640_sdram_vga_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/col_addr_p_0> in Unit <ov5640_sdram_vga_top> is equivalent to the following FF/Latch, which will be removed : <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/col_addr_p_1> in Unit <ov5640_sdram_vga_top> is equivalent to the following FF/Latch, which will be removed : <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_1> 
+INFO:Xst:2261 - The FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/col_addr_p_2> in Unit <ov5640_sdram_vga_top> is equivalent to the following FF/Latch, which will be removed : <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_2> 
+INFO:Xst:2261 - The FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/col_addr_p_3> in Unit <ov5640_sdram_vga_top> is equivalent to the following FF/Latch, which will be removed : <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_3> 
+INFO:Xst:2261 - The FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/col_addr_p_4> in Unit <ov5640_sdram_vga_top> is equivalent to the following FF/Latch, which will be removed : <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt_4> 
+INFO:Xst:3203 - The FF/Latch <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_init_inst/sdram_addr_10> in Unit <ov5640_sdram_vga_top> is the opposite to the following FF/Latch, which will be removed : <SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_init_inst/sdram_addr_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ov5640_sdram_vga_top, actual ratio is 16.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_TOP_inst/read_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <SDRAM_TOP_inst/write_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 289
+ Flip-Flops                                            : 289
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ov5640_sdram_vga_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1219
+#      GND                         : 5
+#      INV                         : 23
+#      LUT1                        : 87
+#      LUT2                        : 170
+#      LUT3                        : 91
+#      LUT4                        : 90
+#      LUT5                        : 104
+#      LUT6                        : 268
+#      MUXCY                       : 182
+#      MUXF7                       : 40
+#      VCC                         : 3
+#      XORCY                       : 156
+# FlipFlops/Latches                : 619
+#      FD                          : 64
+#      FDC                         : 291
+#      FDCE                        : 221
+#      FDP                         : 37
+#      FDP_1                       : 1
+#      FDPE                        : 2
+#      FDR                         : 3
+# RAMS                             : 2
+#      RAMB16BWER                  : 2
+# Clock Buffers                    : 7
+#      BUFG                        : 6
+#      BUFGP                       : 1
+# IO Buffers                       : 74
+#      IBUF                        : 11
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+#      OBUF                        : 45
+#      OBUFT                       : 1
+# DCMs                             : 2
+#      DCM_SP                      : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             619  out of  11440     5%  
+ Number of Slice LUTs:                  833  out of   5720    14%  
+    Number used as Logic:               833  out of   5720    14%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1059
+   Number with an unused Flip Flop:     440  out of   1059    41%  
+   Number with an unused LUT:           226  out of   1059    21%  
+   Number of fully used LUT-FF pairs:   393  out of   1059    37%  
+   Number of unique control sets:        51
+
+IO Utilization: 
+ Number of IOs:                          75
+ Number of bonded IOBs:                  75  out of    186    40%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                7  out of     16    43%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+osc_clk_50                         | DCM_SP:CLK0+DCM_SP:CLK0 | 30    |
+ov5640_top_inst/cnt_8              | BUFG                    | 50    |
+osc_clk_50                         | DCM_SP:CLK2X            | 329   |
+cmos_pclk                          | BUFGP                   | 111   |
+osc_clk_50                         | DCM_SP:CLK0+DCM_SP:CLKFX| 103   |
+-----------------------------------+-------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 66.560ns (Maximum Frequency: 15.024MHz)
+   Minimum input arrival time before clock: 5.628ns
+   Maximum output required time after clock: 7.828ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'osc_clk_50'
+  Clock period: 66.560ns (frequency: 15.024MHz)
+  Total number of paths / destination ports: 7257 / 886
+-------------------------------------------------------------------------
+Delay:               1.280ns (Levels of Logic = 0)
+  Source:            SDRAM_TOP_inst/read_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_9 (FF)
+  Destination:       SDRAM_TOP_inst/read_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_9 (FF)
+  Source Clock:      osc_clk_50 falling 2.0X
+  Destination Clock: osc_clk_50 rising 1.3X
+
+  Data Path: SDRAM_TOP_inst/read_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_9 to SDRAM_TOP_inst/read_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.525   0.681  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_9 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/D<9>)
+     FDC:D                     0.074          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_9
+    ----------------------------------------
+    Total                      1.280ns (0.599ns logic, 0.681ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ov5640_top_inst/cnt_8'
+  Clock period: 7.314ns (frequency: 136.724MHz)
+  Total number of paths / destination ports: 1240 / 88
+-------------------------------------------------------------------------
+Delay:               3.657ns (Levels of Logic = 2)
+  Source:            ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cnt_2 (FF)
+  Destination:       ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cmos_sclk (FF)
+  Source Clock:      ov5640_top_inst/cnt_8 rising
+  Destination Clock: ov5640_top_inst/cnt_8 falling
+
+  Data Path: ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cnt_2 to ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cmos_sclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            22   0.525   1.764  ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cnt_2 (ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cnt_2)
+     LUT6:I1->O            1   0.254   0.790  ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/Mmux_PWR_12_o_PWR_12_o_MUX_103_o11 (ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/Mmux_PWR_12_o_PWR_12_o_MUX_103_o1)
+     LUT3:I1->O            1   0.250   0.000  ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/Mmux_PWR_12_o_PWR_12_o_MUX_103_o12 (ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/PWR_12_o_PWR_12_o_MUX_103_o)
+     FDP_1:D                   0.074          ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cmos_sclk
+    ----------------------------------------
+    Total                      3.657ns (1.103ns logic, 2.554ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'cmos_pclk'
+  Clock period: 7.510ns (frequency: 133.156MHz)
+  Total number of paths / destination ports: 645 / 238
+-------------------------------------------------------------------------
+Delay:               3.755ns (Levels of Logic = 2)
+  Source:            ov5640_top_inst/ov5640_data_inst/rgb565_high (FF)
+  Destination:       SDRAM_TOP_inst/write_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_9 (FF)
+  Source Clock:      cmos_pclk rising
+  Destination Clock: cmos_pclk falling
+
+  Data Path: ov5640_top_inst/ov5640_data_inst/rgb565_high to SDRAM_TOP_inst/write_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.525   1.418  ov5640_top_inst/ov5640_data_inst/rgb565_high (ov5640_top_inst/ov5640_data_inst/rgb565_high)
+     begin scope: 'SDRAM_TOP_inst/write_fifo:wr_en'
+     LUT2:I0->O           19   0.250   1.260  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en)
+     FDPE:CE                   0.302          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1
+    ----------------------------------------
+    Total                      3.755ns (1.077ns logic, 2.678ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'osc_clk_50'
+  Total number of paths / destination ports: 184 / 184
+-------------------------------------------------------------------------
+Offset:              5.201ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       ov5640_top_inst/cnt_0 (FF)
+  Destination Clock: osc_clk_50 rising
+
+  Data Path: reset to ov5640_top_inst/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.804  reset_IBUF (reset_IBUF)
+     LUT3:I2->O          148   0.254   2.356  SDRAM_TOP_inst/SDRAM_arbit_inst/rst_n_inv1 (SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_init_inst/rst_n_inv)
+     FDC:CLR                   0.459          ov5640_top_inst/cnt_0
+    ----------------------------------------
+    Total                      5.201ns (2.041ns logic, 3.160ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ov5640_top_inst/cnt_8'
+  Total number of paths / destination ports: 49 / 49
+-------------------------------------------------------------------------
+Offset:              5.628ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       ov5640_top_inst/ov5640_cfg_inst/cfg_reg_addr_8 (FF)
+  Destination Clock: ov5640_top_inst/cnt_8 rising
+
+  Data Path: reset to ov5640_top_inst/ov5640_cfg_inst/cfg_reg_addr_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.804  reset_IBUF (reset_IBUF)
+     LUT3:I2->O            2   0.254   0.726  rst_n1 (rst_n)
+     LUT6:I5->O           49   0.254   1.803  ov5640_top_inst/ov5640_cfg_inst/rst_n_inv4 (ov5640_top_inst/ov5640_cfg_inst/rst_n_inv)
+     FDC:CLR                   0.459          ov5640_top_inst/ov5640_cfg_inst/start
+    ----------------------------------------
+    Total                      5.628ns (2.295ns logic, 3.333ns route)
+                                       (40.8% logic, 59.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'cmos_pclk'
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Offset:              5.201ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       SDRAM_TOP_inst/write_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN (FF)
+  Destination Clock: cmos_pclk falling
+
+  Data Path: reset to SDRAM_TOP_inst/write_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.804  reset_IBUF (reset_IBUF)
+     LUT3:I2->O          148   0.254   2.356  SDRAM_TOP_inst/SDRAM_arbit_inst/rst_n_inv1 (SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_init_inst/rst_n_inv)
+     begin scope: 'SDRAM_TOP_inst/write_fifo:rst'
+     FDP:PRE                   0.459          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d1
+    ----------------------------------------
+    Total                      5.201ns (2.041ns logic, 3.160ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'osc_clk_50'
+  Total number of paths / destination ports: 129 / 53
+-------------------------------------------------------------------------
+Offset:              7.828ns (Levels of Logic = 4)
+  Source:            ov5640_top_inst/ov5640_powerup_inst/delay_cnt_8 (FF)
+  Destination:       cmos_pwdn (PAD)
+  Source Clock:      osc_clk_50 rising
+
+  Data Path: ov5640_top_inst/ov5640_powerup_inst/delay_cnt_8 to cmos_pwdn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.525   1.271  ov5640_top_inst/ov5640_powerup_inst/delay_cnt_8 (ov5640_top_inst/ov5640_powerup_inst/delay_cnt_8)
+     LUT5:I0->O            1   0.254   0.910  cmos_pwdn22 (cmos_pwdn21)
+     LUT6:I3->O            1   0.235   0.790  cmos_pwdn23 (cmos_pwdn22)
+     LUT6:I4->O            1   0.250   0.681  cmos_pwdn24 (cmos_pwdn_OBUF)
+     OBUF:I->O                 2.912          cmos_pwdn_OBUF (cmos_pwdn)
+    ----------------------------------------
+    Total                      7.828ns (4.176ns logic, 3.652ns route)
+                                       (53.3% logic, 46.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ov5640_top_inst/cnt_8'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cmos_sclk (FF)
+  Destination:       cmos_sclk (PAD)
+  Source Clock:      ov5640_top_inst/cnt_8 falling
+
+  Data Path: ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cmos_sclk to cmos_sclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP_1:C->Q            2   0.525   0.725  ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cmos_sclk (ov5640_top_inst/ov5640_cfg_inst/u_ov5640_sccb/cmos_sclk)
+     OBUF:I->O                 2.912          cmos_sclk_OBUF (cmos_sclk)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock cmos_pclk
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+cmos_pclk            |    3.001|         |    3.755|         |
+osc_clk_50           |         |         |    1.280|         |
+ov5640_top_inst/cnt_8|    3.313|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock osc_clk_50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+cmos_pclk      |         |    3.966|    1.280|         |
+osc_clk_50     |    6.905|    3.249|    6.789|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ov5640_top_inst/cnt_8
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+osc_clk_50           |    7.629|         |    7.629|         |
+ov5640_top_inst/cnt_8|    6.131|         |    3.657|         |
+---------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.66 secs
+ 
+--> 
+
+Total memory usage is 269320 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
+

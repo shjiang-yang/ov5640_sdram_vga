@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/cmos_xclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_xclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_xclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_reset</obj_property>
+         <obj_property name="ObjectShortName">cmos_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_pwdn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_pwdn</obj_property>
+         <obj_property name="ObjectShortName">cmos_pwdn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_sclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/CLK" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/CKE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CKE</obj_property>
+         <obj_property name="ObjectShortName">CKE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cs_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cs_n</obj_property>
+         <obj_property name="ObjectShortName">cs_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/ras_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ras_n</obj_property>
+         <obj_property name="ObjectShortName">ras_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cas_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cas_n</obj_property>
+         <obj_property name="ObjectShortName">cas_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/we_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">we_n</obj_property>
+         <obj_property name="ObjectShortName">we_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/ba" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ba[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ba[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dqm" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dqm[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dqm[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/h_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">h_sync</obj_property>
+         <obj_property name="ObjectShortName">h_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/v_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">v_sync</obj_property>
+         <obj_property name="ObjectShortName">v_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/red" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">red[4:0]</obj_property>
+         <obj_property name="ObjectShortName">red[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/green" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">green[5:0]</obj_property>
+         <obj_property name="ObjectShortName">green[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/blue" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">blue[4:0]</obj_property>
+         <obj_property name="ObjectShortName">blue[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_sdat" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_sdat</obj_property>
+         <obj_property name="ObjectShortName">cmos_sdat</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/osc_clk_50" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">osc_clk_50</obj_property>
+         <obj_property name="ObjectShortName">osc_clk_50</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_pclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_pclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_pclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_href" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_href</obj_property>
+         <obj_property name="ObjectShortName">cmos_href</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_vsync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_vsync</obj_property>
+         <obj_property name="ObjectShortName">cmos_vsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/cmos_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_d[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cmos_d[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group95" type="group">
+      <obj_property name="label">top_inst</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/osc_clk_50" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">osc_clk_50</obj_property>
+         <obj_property name="ObjectShortName">osc_clk_50</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_xclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_xclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_xclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_reset</obj_property>
+         <obj_property name="ObjectShortName">cmos_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_pwdn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_pwdn</obj_property>
+         <obj_property name="ObjectShortName">cmos_pwdn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_sclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_sdat" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_sdat</obj_property>
+         <obj_property name="ObjectShortName">cmos_sdat</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_pclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_pclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_pclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_href" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_href</obj_property>
+         <obj_property name="ObjectShortName">cmos_href</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_vsync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_vsync</obj_property>
+         <obj_property name="ObjectShortName">cmos_vsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cmos_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_d[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cmos_d[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/CLK" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/CKE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CKE</obj_property>
+         <obj_property name="ObjectShortName">CKE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cs_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cs_n</obj_property>
+         <obj_property name="ObjectShortName">cs_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ras_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ras_n</obj_property>
+         <obj_property name="ObjectShortName">ras_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/cas_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cas_n</obj_property>
+         <obj_property name="ObjectShortName">cas_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/we_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">we_n</obj_property>
+         <obj_property name="ObjectShortName">we_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ba" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ba[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ba[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/dqm" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dqm[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dqm[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/h_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">h_sync</obj_property>
+         <obj_property name="ObjectShortName">h_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/v_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">v_sync</obj_property>
+         <obj_property name="ObjectShortName">v_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/red" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">red[4:0]</obj_property>
+         <obj_property name="ObjectShortName">red[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/green" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">green[5:0]</obj_property>
+         <obj_property name="ObjectShortName">green[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/blue" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">blue[4:0]</obj_property>
+         <obj_property name="ObjectShortName">blue[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/clk_24M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_24M</obj_property>
+         <obj_property name="ObjectShortName">clk_24M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/clk_50M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_50M</obj_property>
+         <obj_property name="ObjectShortName">clk_50M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/clk_50M_2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_50M_2</obj_property>
+         <obj_property name="ObjectShortName">clk_50M_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/clk_100M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_100M</obj_property>
+         <obj_property name="ObjectShortName">clk_100M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/clk_vga" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_vga</obj_property>
+         <obj_property name="ObjectShortName">clk_vga</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/rgb565" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rgb565[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rgb565[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/rgb565_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rgb565_ready</obj_property>
+         <obj_property name="ObjectShortName">rgb565_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/pclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pclk</obj_property>
+         <obj_property name="ObjectShortName">pclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/empty_r" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">empty_r</obj_property>
+         <obj_property name="ObjectShortName">empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">vga_req</obj_property>
+         <obj_property name="ObjectShortName">vga_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">vga_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">vga_data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/LOCKED" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">LOCKED</obj_property>
+         <obj_property name="ObjectShortName">LOCKED</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/LOCKED1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">LOCKED1</obj_property>
+         <obj_property name="ObjectShortName">LOCKED1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/rst_key_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_key_out</obj_property>
+         <obj_property name="ObjectShortName">rst_key_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group105" type="group">
+      <obj_property name="label">deb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/sysclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sysclk</obj_property>
+         <obj_property name="ObjectShortName">sysclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/key_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">key_in</obj_property>
+         <obj_property name="ObjectShortName">key_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">trig</obj_property>
+         <obj_property name="ObjectShortName">trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/key_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">key_out</obj_property>
+         <obj_property name="ObjectShortName">key_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/key_in_r" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_in_r[1:0]</obj_property>
+         <obj_property name="ObjectShortName">key_in_r[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/CLK_CYC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CLK_CYC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_CYC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/CNT_END" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CNT_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CNT_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/debounce_inst/CNT_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CNT_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CNT_WIDTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group125" type="group">
+      <obj_property name="label">ov</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/clk_24M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_24M</obj_property>
+         <obj_property name="ObjectShortName">clk_24M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/clk_50M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_50M</obj_property>
+         <obj_property name="ObjectShortName">clk_50M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_reset</obj_property>
+         <obj_property name="ObjectShortName">cmos_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_pwdn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_pwdn</obj_property>
+         <obj_property name="ObjectShortName">cmos_pwdn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_sclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_sdat" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_sdat</obj_property>
+         <obj_property name="ObjectShortName">cmos_sdat</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_xclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_xclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_xclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_pclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_pclk</obj_property>
+         <obj_property name="ObjectShortName">cmos_pclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_href" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_href</obj_property>
+         <obj_property name="ObjectShortName">cmos_href</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_vsync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_vsync</obj_property>
+         <obj_property name="ObjectShortName">cmos_vsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cmos_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmos_d[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cmos_d[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/rgb565" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rgb565[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rgb565[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/rgb565_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rgb565_ready</obj_property>
+         <obj_property name="ObjectShortName">rgb565_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/pclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pclk</obj_property>
+         <obj_property name="ObjectShortName">pclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/pwup_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pwup_done</obj_property>
+         <obj_property name="ObjectShortName">pwup_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cfg_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cfg_done</obj_property>
+         <obj_property name="ObjectShortName">cfg_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/clk_100k" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_100k</obj_property>
+         <obj_property name="ObjectShortName">clk_100k</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/ov5640_top_inst/cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnt[8:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[8:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group157" type="group">
+      <obj_property name="label">sdram_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/sysclk_100M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sysclk_100M</obj_property>
+         <obj_property name="ObjectShortName">sysclk_100M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/CLK" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/CKE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CKE</obj_property>
+         <obj_property name="ObjectShortName">CKE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/cs_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cs_n</obj_property>
+         <obj_property name="ObjectShortName">cs_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/ras_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ras_n</obj_property>
+         <obj_property name="ObjectShortName">ras_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/cas_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cas_n</obj_property>
+         <obj_property name="ObjectShortName">cas_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/we_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">we_n</obj_property>
+         <obj_property name="ObjectShortName">we_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/ba" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ba[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ba[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/dqm" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dqm[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dqm[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/w_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">w_clk</obj_property>
+         <obj_property name="ObjectShortName">w_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/wen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wen</obj_property>
+         <obj_property name="ObjectShortName">wen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/r_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">r_clk</obj_property>
+         <obj_property name="ObjectShortName">r_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/ren" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ren</obj_property>
+         <obj_property name="ObjectShortName">ren</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/empty_r" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">empty_r</obj_property>
+         <obj_property name="ObjectShortName">empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_data_vld" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_data_vld</obj_property>
+         <obj_property name="ObjectShortName">write_data_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_trig</obj_property>
+         <obj_property name="ObjectShortName">write_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/w_dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">w_dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">w_dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/w_data_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">w_data_count[9:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data_count[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_trig</obj_property>
+         <obj_property name="ObjectShortName">read_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_data_vld" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_data_vld</obj_property>
+         <obj_property name="ObjectShortName">read_data_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/r_dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r_dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">r_dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_end</obj_property>
+         <obj_property name="ObjectShortName">write_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/r_data_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r_data_count[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_count[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/full_w" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">full_w</obj_property>
+         <obj_property name="ObjectShortName">full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/empty_w" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">empty_w</obj_property>
+         <obj_property name="ObjectShortName">empty_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/full_r" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">full_r</obj_property>
+         <obj_property name="ObjectShortName">full_r</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group208" type="group">
+      <obj_property name="label">sdram_arbit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/sysclk_100M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sysclk_100M</obj_property>
+         <obj_property name="ObjectShortName">sysclk_100M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/CLK" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/CKE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CKE</obj_property>
+         <obj_property name="ObjectShortName">CKE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/dqm" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dqm[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dqm[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/write_trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_trig</obj_property>
+         <obj_property name="ObjectShortName">write_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/write_data_vld" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_data_vld</obj_property>
+         <obj_property name="ObjectShortName">write_data_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/w_dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">w_dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">w_dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/read_trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_trig</obj_property>
+         <obj_property name="ObjectShortName">read_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/read_data_vld" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_data_vld</obj_property>
+         <obj_property name="ObjectShortName">read_data_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/r_dq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">r_dq[15:0]</obj_property>
+         <obj_property name="ObjectShortName">r_dq[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/write_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_end</obj_property>
+         <obj_property name="ObjectShortName">write_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/init_end_flag" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">init_end_flag</obj_property>
+         <obj_property name="ObjectShortName">init_end_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/cmd_init" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmd_init[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cmd_init[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/sdram_addr_init" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_addr_init[12:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_addr_init[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/bank_addr_init" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bank_addr_init[1:0]</obj_property>
+         <obj_property name="ObjectShortName">bank_addr_init[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/arbit_refresh_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_refresh_req</obj_property>
+         <obj_property name="ObjectShortName">arbit_refresh_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/arbit_refresh_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_refresh_end</obj_property>
+         <obj_property name="ObjectShortName">arbit_refresh_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/cmd_refresh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmd_refresh[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cmd_refresh[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/sdram_addr_refresh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_addr_refresh[12:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_addr_refresh[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/bank_addr_refresh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bank_addr_refresh[1:0]</obj_property>
+         <obj_property name="ObjectShortName">bank_addr_refresh[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/arbit_write_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_write_req</obj_property>
+         <obj_property name="ObjectShortName">arbit_write_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/write_prech_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_prech_end</obj_property>
+         <obj_property name="ObjectShortName">write_prech_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/cmd_write" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmd_write[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cmd_write[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/sdram_addr_write" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_addr_write[12:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_addr_write[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/bank_addr_write" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bank_addr_write[1:0]</obj_property>
+         <obj_property name="ObjectShortName">bank_addr_write[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/arbit_read_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_read_req</obj_property>
+         <obj_property name="ObjectShortName">arbit_read_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/read_prech_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_prech_end</obj_property>
+         <obj_property name="ObjectShortName">read_prech_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/read_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_end</obj_property>
+         <obj_property name="ObjectShortName">read_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/cmd_read" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmd_read[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cmd_read[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/sdram_addr_read" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_addr_read[12:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_addr_read[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/bank_addr_read" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bank_addr_read[1:0]</obj_property>
+         <obj_property name="ObjectShortName">bank_addr_read[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/cs_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cs_n</obj_property>
+         <obj_property name="ObjectShortName">cs_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/ras_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ras_n</obj_property>
+         <obj_property name="ObjectShortName">ras_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/cas_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cas_n</obj_property>
+         <obj_property name="ObjectShortName">cas_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/we_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">we_n</obj_property>
+         <obj_property name="ObjectShortName">we_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/ba" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ba[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ba[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">state[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/arbit_refresh_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_refresh_ack</obj_property>
+         <obj_property name="ObjectShortName">arbit_refresh_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/arbit_write_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_write_ack</obj_property>
+         <obj_property name="ObjectShortName">arbit_write_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/arbit_read_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_read_ack</obj_property>
+         <obj_property name="ObjectShortName">arbit_read_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/write_read_flag" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_read_flag</obj_property>
+         <obj_property name="ObjectShortName">write_read_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/NOP" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">NOP[3:0]</obj_property>
+         <obj_property name="ObjectShortName">NOP[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/S_INIT" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_INIT[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_INIT[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/S_ARBIT" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_ARBIT[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_ARBIT[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/S_REF" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_REF[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_REF[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/S_WRITE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_WRITE[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_WRITE[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/S_READ" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_READ[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_READ[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group280" type="group">
+      <obj_property name="label">sdram_w</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/sysclk_100M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sysclk_100M</obj_property>
+         <obj_property name="ObjectShortName">sysclk_100M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/arbit_write_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_write_ack</obj_property>
+         <obj_property name="ObjectShortName">arbit_write_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/refresh_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">refresh_req</obj_property>
+         <obj_property name="ObjectShortName">refresh_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_trig</obj_property>
+         <obj_property name="ObjectShortName">write_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/row_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">row_end</obj_property>
+         <obj_property name="ObjectShortName">row_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_bank_addr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_bank_addr</obj_property>
+         <obj_property name="ObjectShortName">write_bank_addr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/arbit_write_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_write_req</obj_property>
+         <obj_property name="ObjectShortName">arbit_write_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/arbit_prech_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_prech_end</obj_property>
+         <obj_property name="ObjectShortName">arbit_prech_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_end</obj_property>
+         <obj_property name="ObjectShortName">write_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/cmd_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmd_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cmd_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/sdram_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/sdram_bank_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_bank_addr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_bank_addr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/data_vld" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_vld</obj_property>
+         <obj_property name="ObjectShortName">data_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">state[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/act_cnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">act_cnt</obj_property>
+         <obj_property name="ObjectShortName">act_cnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/burst_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">burst_cnt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">burst_cnt[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/write_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">write_cnt[19:0]</obj_property>
+         <obj_property name="ObjectShortName">write_cnt[19:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/prech_cnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prech_cnt</obj_property>
+         <obj_property name="ObjectShortName">prech_cnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/row_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">row_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">row_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/col_addr_p" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">col_addr_p[5:0]</obj_property>
+         <obj_property name="ObjectShortName">col_addr_p[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/S_IDLE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_IDLE[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_IDLE[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/S_REQ" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_REQ[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_REQ[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/S_ACT" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_ACT[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_ACT[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/S_WRITE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_WRITE[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_WRITE[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/S_PRECHG" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_PRECHG[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_PRECHG[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/ACTIVE_CMD" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ACTIVE_CMD[3:0]</obj_property>
+         <obj_property name="ObjectShortName">ACTIVE_CMD[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/WRITE_CMD" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WRITE_CMD[3:0]</obj_property>
+         <obj_property name="ObjectShortName">WRITE_CMD[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/NOP" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">NOP[3:0]</obj_property>
+         <obj_property name="ObjectShortName">NOP[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/PRECHARGE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">PRECHARGE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">PRECHARGE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/ACT_END" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ACT_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ACT_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/BURST_END" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">BURST_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BURST_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/PRECH_END" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">PRECH_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PRECH_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_write_inst/WRITE_TIMEs" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WRITE_TIMEs[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WRITE_TIMEs[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group315" type="group">
+      <obj_property name="label">sdram_r</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/sysclk_100M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sysclk_100M</obj_property>
+         <obj_property name="ObjectShortName">sysclk_100M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/refresh_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">refresh_req</obj_property>
+         <obj_property name="ObjectShortName">refresh_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/arbit_read_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_read_ack</obj_property>
+         <obj_property name="ObjectShortName">arbit_read_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/write_bank_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">write_bank_addr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">write_bank_addr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/read_trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_trig</obj_property>
+         <obj_property name="ObjectShortName">read_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/cmd_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cmd_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cmd_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/sdram_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/sdram_bank_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdram_bank_addr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sdram_bank_addr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/arbit_read_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_read_req</obj_property>
+         <obj_property name="ObjectShortName">arbit_read_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/arbit_read_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_read_end</obj_property>
+         <obj_property name="ObjectShortName">arbit_read_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/arbit_prech_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">arbit_prech_end</obj_property>
+         <obj_property name="ObjectShortName">arbit_prech_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/data_vld" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_vld</obj_property>
+         <obj_property name="ObjectShortName">data_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/act_cnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">act_cnt</obj_property>
+         <obj_property name="ObjectShortName">act_cnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/prech_cnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prech_cnt</obj_property>
+         <obj_property name="ObjectShortName">prech_cnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/read_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">read_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/burst_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">burst_cnt[19:0]</obj_property>
+         <obj_property name="ObjectShortName">burst_cnt[19:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">state[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/row_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">row_end</obj_property>
+         <obj_property name="ObjectShortName">row_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/row_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">row_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">row_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/col_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">col_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">col_addr[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/BURST_TIMES" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">BURST_TIMES[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BURST_TIMES[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/ACT_END" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ACT_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ACT_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/READ_END" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">READ_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/PRECH_END" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">PRECH_END[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PRECH_END[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/READ_CMD" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">READ_CMD[3:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_CMD[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/ACTIVE_CMD" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ACTIVE_CMD[3:0]</obj_property>
+         <obj_property name="ObjectShortName">ACTIVE_CMD[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/NOP" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">NOP[3:0]</obj_property>
+         <obj_property name="ObjectShortName">NOP[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/PRECH_CMD" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">PRECH_CMD[3:0]</obj_property>
+         <obj_property name="ObjectShortName">PRECH_CMD[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/S_IDLE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_IDLE[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_IDLE[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/S_REQ" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_REQ[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_REQ[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/S_ACT" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_ACT[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_ACT[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/S_READ" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_READ[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_READ[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/SDRAM_arbit_inst/SDRAM_read_inst/S_PRECH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">S_PRECH[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S_PRECH[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group220" type="group">
+      <obj_property name="label">wfifo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/wr_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_clk</obj_property>
+         <obj_property name="ObjectShortName">wr_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/rd_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_clk</obj_property>
+         <obj_property name="ObjectShortName">rd_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/wr_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/full" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">full</obj_property>
+         <obj_property name="ObjectShortName">full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">empty</obj_property>
+         <obj_property name="ObjectShortName">empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/rd_data_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_data_count[8:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data_count[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/write_fifo/wr_data_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_data_count[8:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_data_count[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group232" type="group">
+      <obj_property name="label">rfifo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/wr_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_clk</obj_property>
+         <obj_property name="ObjectShortName">wr_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/rd_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_clk</obj_property>
+         <obj_property name="ObjectShortName">rd_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/wr_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/full" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">full</obj_property>
+         <obj_property name="ObjectShortName">full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">empty</obj_property>
+         <obj_property name="ObjectShortName">empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/rd_data_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_data_count[8:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data_count[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/SDRAM_TOP_inst/read_fifo/wr_data_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_data_count[8:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_data_count[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group245" type="group">
+      <obj_property name="label">vga</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/sys_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sys_clk</obj_property>
+         <obj_property name="ObjectShortName">sys_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/red" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">red[4:0]</obj_property>
+         <obj_property name="ObjectShortName">red[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/green" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">green[5:0]</obj_property>
+         <obj_property name="ObjectShortName">green[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/blue" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">blue[4:0]</obj_property>
+         <obj_property name="ObjectShortName">blue[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/data_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_req</obj_property>
+         <obj_property name="ObjectShortName">data_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/h_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">h_sync</obj_property>
+         <obj_property name="ObjectShortName">h_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/v_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">v_sync</obj_property>
+         <obj_property name="ObjectShortName">v_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/h_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">h_cnt[10:0]</obj_property>
+         <obj_property name="ObjectShortName">h_cnt[10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/v_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">v_cnt[9:0]</obj_property>
+         <obj_property name="ObjectShortName">v_cnt[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/uut/vga_driver_inst/data_req_r" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_req_r</obj_property>
+         <obj_property name="ObjectShortName">data_req_r</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

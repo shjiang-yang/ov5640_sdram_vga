@@ -1,0 +1,72 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top_isim_beh.exe" -prj "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top_beh.prj" "work.tb_top" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ipcore_dir/pll.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ipcore_dir/pll1.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_write.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_refresh.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_read.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_init.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_sccb.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_arbit.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_powerup.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_data.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_cfg.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ipcore_dir/fifo.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/vga_driver.v" into library work
+WARNING:HDLCompiler:1509 - "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/vga_driver.v" Line 13: Macro name 1024_768_60Hz starting with a number violates Verilog syntax
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_TOP.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_top.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/debounce.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_sdram_vga_top.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/../../sdram_model_plus.v" into library work
+Analyzing Verilog file "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_top.v" Line 69: Port rd_data is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_TOP.v" Line 118: Port rd_data_count is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_TOP.v" Line 137: Port wr_data_count is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top.v" Line 96: Size mismatch in connection of port <Addr>. Formal port size is 11-bit while actual signal size is 13-bit.
+WARNING:HDLCompiler:189 - "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top.v" Line 98: Size mismatch in connection of port <Dqm>. Formal port size is 4-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:189 - "C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top.v" Line 99: Size mismatch in connection of port <Dq>. Formal port size is 32-bit while actual signal size is 16-bit.
+Completed static elaboration
+Compiling module IBUFG
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKFX_DIVIDE=25,CLKFX_MUL...
+Compiling module BUFG
+Compiling module pll
+Compiling module DCM_SP(CLKFX_DIVIDE=10,CLKFX_MUL...
+Compiling module pll1
+Compiling module debounce(CLK_CYC=20)
+Compiling module ov5640_powerup
+Compiling module ov5640_sccb
+Compiling module ov5640_cfg
+Compiling module ov5640_data
+Compiling module ov5640_top
+Compiling module SDRAM_init
+Compiling module SDRAM_refresh
+Compiling module SDRAM_write
+Compiling module SDRAM_read
+Compiling module SDRAM_arbit
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_bhv_ver_as(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_DATA_COUNT...
+Compiling module fifo
+Compiling module SDRAM_TOP
+Compiling module vga_driver
+Compiling module ov5640_sdram_vga_top
+Compiling module sdram_model_plus
+Compiling module tb_top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 32 Verilog Units
+Built simulation executable C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top_isim_beh.exe
+Fuse Memory Usage: 40620 KB
+Fuse CPU Usage: 1107 ms

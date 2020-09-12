@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1509" delta="unknown" >"C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/vga_driver.v" Line 13: Macro name <arg fmt="%s" index="1">1024_768_60Hz</arg> starting with a number violates Verilog syntax
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/ov5640_top.v" Line 69: Port <arg fmt="%s" index="1">rd_data</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_TOP.v" Line 118: Port <arg fmt="%s" index="1">rd_data_count</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/SDRAM_TOP.v" Line 137: Port <arg fmt="%s" index="1">wr_data_count</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top.v" Line 96: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">13</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top.v" Line 98: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Dqm</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/shjiang/Desktop/Xilinx Projects/OV5640_SDRAM_VGA/tb_top.v" Line 99: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Dq</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+</msg>
+
+</messages>
+
